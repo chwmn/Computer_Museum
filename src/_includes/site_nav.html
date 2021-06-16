@@ -1,0 +1,6 @@
+<div class="site_nav">
+  {% assign site_nav = collections.siteNav | sortByPageOrder%} {% for item in
+  site_nav %}
+  <a href="{{ item.url }}">{{ item.data.pageTitle}}</a>
+  {% endfor %}
+</div>
