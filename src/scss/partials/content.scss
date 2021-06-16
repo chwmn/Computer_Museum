@@ -33,7 +33,7 @@
   a {
     border-bottom: 5px solid black;
     border-left: 1px solid black;
-    border-radius: 2px;
+    border-radius: 4px;
     border-right: 5px solid black;
     border-top: 1px solid black;
     box-sizing: border-box;
@@ -54,6 +54,25 @@
     border-top: 5px solid black;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
+  }
+}
+
+.aboutLanding {
+  background-image: linear-gradient(#96a4ff, #864ed9);
+  width: 100%;
+  margin: 10px;
+  height: 30vh;
+  border-radius: 4px;
+  font-family: "NeueMachina";
+  font-size: 24px;
+
+  p {
+    font-weight: 200;
+  }
+
+  a {
+    width: fit-content;
+    font-size: 24px;
   }
 }
 
