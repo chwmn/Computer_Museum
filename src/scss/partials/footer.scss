@@ -1,5 +1,5 @@
 .container footer {
-  color: #fafff5;
+  color: var(--main-bg-color);
   background-color: #000;
   display: flex;
   height: 20vh;
@@ -15,7 +15,7 @@
   }
 
   a {
-    color: #fafff5;
+    color: var(--main-bg-color);
     text-decoration: none;
   }
 
