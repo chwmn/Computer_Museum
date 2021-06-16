@@ -1,17 +1,19 @@
 <footer>
   <ul>
-    <li>
-      <a href="">THE COMPUTER MUSEUM</a>
-    </li>
-    <li>
-      <a href="">GALLERY</a>
-    </li>
-    <li>
-      <a href="">CONTACT</a>
-    </li>
-    <li>
-      <a href="">ABOUT</a>
-    </li>
+    <li><a href="/index.html">THE COMPUTER MUSEUM</a></li>
     <li>338 CLUBHOUSE RD. HUNT VALLEY, MD 21031</li>
+  </ul>
+
+  <ul>
+    {% assign site_footer = collections.siteFooter | sortByPageOrder%} {% for
+    item in site_footer %}
+    <li><a href="{{ item.url }}">{{ item.data.pageTitle}}</a></li>
+    {% endfor %}
+  </ul>
+
+  <ul>
+    <li>SUMMER 2021</li>
+    <li>MADE USING 11ty/ELEVENTY</li>
+    <li>CHULMIN HAN</li>
   </ul>
 </footer>
