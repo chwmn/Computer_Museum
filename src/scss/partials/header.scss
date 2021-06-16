@@ -36,6 +36,11 @@
     margin: 10px 20px;
     text-decoration: none;
   }
+
+  [aria-current] {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
