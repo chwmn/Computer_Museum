@@ -1,0 +1,48 @@
+.contentContainer {
+  min-height: 60vh;
+  // display: flex;
+}
+
+.content {
+  align-content: space-around;
+  border-bottom: 1px solid black;
+  // border-left: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 40vh;
+  // width: 50vw;
+
+  h2 {
+    font-family: "Mondwest";
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+  }
+
+  a {
+    border-bottom: 5px solid black;
+    border-left: 1px solid black;
+    border-radius: 2px;
+    border-right: 5px solid black;
+    border-top: 1px solid black;
+    box-sizing: border-box;
+    color: #000;
+    display: block;
+    font-family: "NeueMachina";
+    font-size: 48px;
+    font-weight: 700;
+    padding: 10px 10px 2px 10px;
+    margin: 10px;
+    text-decoration: none;
+  }
+}

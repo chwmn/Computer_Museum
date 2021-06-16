@@ -25,3 +25,10 @@
   src: url("/assets/fonts/NeueMachina-Ultralight.woff") format("woff");
   font-weight: 200;
 }
+
+@font-face {
+  font-family: "NeueMachina";
+  src: url("/assets/fonts/NeueMachina-Light.woff2") format("woff2");
+  src: url("/assets/fonts/NeueMachina-Light.woff") format("woff");
+  font-weight: 300;
+}

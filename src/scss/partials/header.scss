@@ -1,0 +1,39 @@
+.container header {
+  //   background-color: #c0ff94;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.title a {
+  color: #000;
+  display: block;
+  font-family: "Mondwest";
+  font-size: 100px;
+  font-weight: 700;
+  padding: 20px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.site_nav {
+  // align-self: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  // width: fit-content;
+
+  a {
+    color: #000;
+    display: block;
+    font-family: "NeueMachina";
+    font-size: 24px;
+    font-weight: 200;
+    margin: 10px 20px;
+    text-decoration: none;
+  }
+}
