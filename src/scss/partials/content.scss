@@ -4,15 +4,19 @@
 }
 
 .content {
-  align-content: space-around;
+  align-content: center;
   border-bottom: 1px solid black;
-  padding: 20px 0;
+  padding: 75px 0;
   // border-left: 1px solid black;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-height: 40vh;
-  // width: 50vw;
+  // display: flex;
+  // justify-content: center;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-rows: fit-content fit-content;
+  row-gap: 10px;
+  min-height: 30vh;
+  margin: 0 auto;
 
   h2 {
     font-family: "Mondwest";
@@ -21,14 +25,25 @@
     margin: 0 auto;
     text-align: center;
     width: 100%;
+    grid-column: 1 / 3;
   }
 
   .buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 100vw;
+    grid-column: 1/3;
+    grid-row: 2 /3;
+
+    a {
+      width: fit-content;
+      text-align: center;
+    }
   }
+
+  // .buttons2 a {
+  //   width: 45%;
+  // }
 
   a {
     border-bottom: 5px solid black;
@@ -50,44 +65,174 @@
   a:hover {
     animation-name: buttonPush;
     animation-duration: 0.15s;
-    border-left: 5px solid black;
-    border-top: 5px solid black;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    color: var(--hover-color);
+    border-left: 5px solid var(--hover-color);
+    border-top: 5px solid var(--hover-color);
+    border-bottom: 1px solid var(--hover-color);
+    border-right: 1px solid var(--hover-color);
   }
 }
 
 .aboutLanding {
-  background-image: linear-gradient(#96a4ff, #864ed9);
-  width: 100%;
+  // background-image: linear-gradient(#f78e4d, #864ed9);
+  // background-color: #fff;
   margin: 10px;
-  height: 30vh;
+  height: 19vw;
   border-radius: 4px;
   font-family: "NeueMachina";
-  font-size: 24px;
+  font-size: 20px;
+  color: #000;
+  border-left: 1px solid;
+  border-top: 1px solid;
+  border-bottom: 5px solid;
+  border-right: 5px solid;
+  border-color: black;
+  align-self: center;
+  grid-column: 1 / 2;
+  grid-row: 1 /2;
+  box-sizing: border-box;
 
   p {
     font-weight: 200;
+    margin: 20px;
+    text-align: center;
   }
 
   a {
-    width: fit-content;
+    color: #000;
     font-size: 24px;
+    margin: auto;
+    width: fit-content;
   }
+
+  a:hover {
+    border-color: #fff;
+    border-color: var(--hover-color);
+  }
+}
+
+.bar {
+  border-bottom: 1px solid black;
+  height: 20px;
+  display: flex;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 5px;
+  margin: 5px 0 5px 5px;
 }
 
 @keyframes buttonPush {
   from {
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 5px solid black;
-    border-right: 5px solid black;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 5px solid;
+    border-right: 5px solid;
   }
 
   to {
-    border-left: 5px solid black;
-    border-top: 5px solid black;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 5px solid;
+    border-top: 5px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+  }
+}
+
+.keyboard {
+  grid-column: 2 /3;
+  grid-row: 1/ 2;
+  display: grid;
+  grid-template-columns: repeat(8, 5.5vw);
+  grid-template-rows: repeat(3, 5.5vw);
+  column-gap: 0.25vw;
+  row-gap: 0.25vw;
+  border-left: 1px solid;
+  border-top: 1px solid;
+  border-bottom: 5px solid;
+  border-right: 5px solid;
+  border-radius: 5px;
+  padding: 10px;
+  height: fit-content;
+  align-self: center;
+  width: fit-content;
+  margin: 0 10px 0 auto;
+}
+
+.key a {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-weight: 200;
+  font-size: 24px;
+  text-align: left;
+}
+
+.key2 {
+  grid-column: 1/ 3;
+}
+
+.key3 {
+  grid-column: 7/ 9;
+}
+
+.space {
+  grid-column: 3 / 7;
+
+  a {
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .content {
+    grid-template-columns: repeat(2, fit-content);
+    grid-template-rows: repeat(3, fit-content);
+  }
+
+  .keyboard {
+    grid-column: 1 /2;
+    grid-row: 2 / 3;
+    margin: 0 auto 0 10px;
+  }
+
+  .content .buttons2 {
+    grid-column: 2 / 3;
+    grid-row: 2 /3;
+  }
+
+  .aboutLanding {
+    grid-column: 1 / 3;
+    height: 300px;
+
+    p {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .keyboard {
+    grid-column: 1 / 3;
+    grid-template-columns: repeat(8, 10.5vw);
+    grid-template-rows: repeat(3, 10.5vw);
+    column-gap: 1vw;
+    row-gap: 1vw;
+    margin: 0 auto;
+  }
+  .keyboard a {
+    font-size: 32px;
+  }
+  .content .buttons {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .keyboard a {
+    font-size: 16px;
   }
 }
