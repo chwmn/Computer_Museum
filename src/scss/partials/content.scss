@@ -1,5 +1,6 @@
 .contentContainer {
   min-height: 60vh;
+  background-image: linear-gradient(#e8ffd9, #d9f1ff);
   // display: flex;
 }
 
@@ -34,11 +35,6 @@
     justify-content: space-around;
     grid-column: 1/3;
     grid-row: 2 /3;
-
-    a {
-      width: fit-content;
-      text-align: center;
-    }
   }
 
   // .buttons2 a {
@@ -46,6 +42,7 @@
   // }
 
   a {
+    background-color: var(--main-bg-color);
     border-bottom: 5px solid black;
     border-left: 1px solid black;
     border-radius: 4px;
@@ -60,6 +57,8 @@
     padding: 10px 10px 2px 10px;
     margin: 10px;
     text-decoration: none;
+    width: fit-content;
+    text-align: center;
   }
 
   a:hover {
@@ -91,6 +90,7 @@
   grid-column: 1 / 2;
   grid-row: 1 /2;
   box-sizing: border-box;
+  background-color: var(--main-bg-color);
 
   p {
     font-weight: 200;
@@ -143,6 +143,7 @@
 
 .keyboard {
   grid-column: 2 /3;
+  background-color: var(--main-bg-color);
   grid-row: 1/ 2;
   display: grid;
   grid-template-columns: repeat(8, 5.5vw);
