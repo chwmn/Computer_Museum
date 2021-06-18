@@ -1,6 +1,8 @@
 .covid {
   background-color: #000;
   padding: 10px 10px 7px 10px;
+  display: flex;
+  justify-content: space-around;
 
   p {
     color: var(--main-bg-color);
@@ -8,9 +10,17 @@
     font-size: 24px;
     font-weight: 700;
     text-align: center;
+    align-self: center;
+    width: fit-content;
   }
 
   a {
     color: #fff;
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
+    align-self: center;
   }
 }

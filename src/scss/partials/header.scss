@@ -6,17 +6,20 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100vw;
+  // height: 90vh;
 }
 
 .title a {
   color: #000;
   display: block;
   font-family: "Mondwest";
+  // font-size: 15vw;
   font-size: 100px;
   font-weight: 700;
   padding: 10px;
   text-decoration: none;
   width: fit-content;
+  // color: var(--main-bg-color);
 }
 
 .site_nav {
@@ -29,6 +32,7 @@
 
   a {
     color: #000;
+    // color: var(--main-bg-color);
     display: block;
     font-family: "NeueMachina";
     font-size: 24px;
@@ -40,14 +44,15 @@
   [aria-current] {
     text-decoration: underline;
     text-decoration-thickness: 1px;
+    // font-weight: 700;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .site_nav {
-    width: fit-content;
-    align-self: center;
-    display: block;
-    text-align: right;
-  }
-} ;
+// @media screen and (min-width: 1200px) {
+//   .site_nav {
+//     width: fit-content;
+//     align-self: center;
+//     display: block;
+//     text-align: right;
+//   }
+// } ;
