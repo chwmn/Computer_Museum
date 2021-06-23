@@ -32,3 +32,31 @@
   src: url("/assets/fonts/NeueMachina-Light.woff") format("woff");
   font-weight: 300;
 }
+
+@font-face {
+  font-family: "ObjectSans";
+  src: url("/assets/fonts/ObjectSans-Bold.woff2") format("woff2");
+  src: url("/assets/fonts/ObjectSans-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ObjectSans";
+  src: url("/assets/fonts/ObjectSans-Regular.woff2") format("woff2");
+  src: url("/assets/fonts/ObjectSans-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ObjectSans";
+  src: url("/assets/fonts/ObjectSans-Thin.woff2") format("woff2");
+  src: url("/assets/fonts/ObjectSans-Thin.woff") format("woff");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "NeueBit";
+  src: url("/assets/fonts/NeueBit-Bold.woff2") format("woff2");
+  src: url("/assets/fonts/NeueBit-Bold.woff") format("woff");
+  font-weight: 400;
+}
