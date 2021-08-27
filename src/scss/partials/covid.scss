@@ -2,13 +2,15 @@
   // background-color: #a3e39f;
   background-image: linear-gradient(#fff, #ededed);
   // padding: 10px 10px 7px 10px;
-  min-height: 50px;
   display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  width: 100vw;
+  height: 3em;
+  width: 100%;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  position: sticky;
+  top: 3em;
+  z-index: 999;
+  overflow: hidden;
 
   p {
     color: var(--main-text-color);
@@ -17,10 +19,12 @@
     font-weight: 700;
     text-align: center;
     align-self: center;
-    width: 100vw;
+    width: 1200px;
     position: relative;
     top: 1px;
     margin: 10px;
+    overflow: hidden;
+    height: 1em;
   }
 
   a {
@@ -33,6 +37,22 @@
     align-self: center;
     position: relative;
     bottom: 2px;
-    margin: 0 20px;
+  }
+}
+
+.covidWarning {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  animation: rolling 20s linear infinite;
+}
+
+@keyframes rolling {
+  from {
+    transform: translateX(100vw);
+  }
+
+  to {
+    transform: translateX(-100vw);
   }
 }
