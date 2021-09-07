@@ -1,0 +1,64 @@
+{
+  "computers": [
+    {
+      "name": "Burroughs Adding Machine",
+      "image": "/assets/images/BurroughsAddingMachine.png",
+      "year": "1905",
+      "company": "Burroughs Adding Machine Company"
+    },
+    {
+      "name": "Graphotype Keyboard Electric Model 6341",
+      "image": "/assets/images/GraphotypeKeyboardElectricModel.png",
+      "year": "1930 - 1950",
+      "company": "Addressograph-Multigraph Corporation, Cleveland, Ohio"
+    },
+    {
+      "name": "The Millionaire Calculating Machine",
+      "image": "/assets/images/TheMillionaireCalculatingMachine.png",
+      "year": "1893, Model displayed - 1909",
+      "company": "Keuffel & Esser"
+    },
+    {
+      "name": "Dictaphone Shaving Machine",
+      "image": "/assets/images/DictaphoneShavingMachine.png",
+      "year": "Early 1900s",
+      "company": "Dictaphone Corporation of New York"
+    },
+    {
+      "name": "Dictaphone Electronic Dictating Machine",
+      "image": "/assets/images/DictaphoneElectronicDictatingMachine.png",
+      "year": "Early 1900s",
+      "company": "Dictaphone Corporation of New York"
+    },
+    {
+      "name": "Curta Calculating Machines",
+      "image": "/assets/images/CurtaCalculatingMachines.png",
+      "year": "1938",
+      "company": "Curt Herzstark"
+    },
+    {
+      "name": "Thacher 4012 Slide Rule",
+      "image": "/assets/images/Thacher4012SlideRule.png",
+      "year": "1891",
+      "company": "Keuffel and Esser"
+    },
+    {
+      "name": "Quipu (Khipu)",
+      "image": "/assets/images/Quipu.png",
+      "year": "1450 - 1532 AD",
+      "company": "Andean Civilizations, Tahuantinsuyu Empire"
+    },
+    {
+      "name": "Addressograph Model 965-RR",
+      "image": "/assets/images/AddressographModel965-RR.png",
+      "year": "1960s",
+      "company": "Addressograph-Multigraph Corporation, Cleveland, Ohio"
+    },
+    {
+      "name": "IBM 83 Card Sorter",
+      "image": "/assets/images/IBM83CardSorter.png",
+      "year": "1900s",
+      "company": "IBM"
+    }
+  ]
+}

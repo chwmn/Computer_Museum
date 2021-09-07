@@ -8,18 +8,21 @@
   // height: 90vh;
 }
 
-.title a {
-  // color: var(--main-text-color);
-  display: block;
-  font-family: var(--header-font);
-  // font-size: 15vw;
+.title {
   font-size: 90px;
-  font-weight: 700;
-  padding: 10px;
-  text-decoration: none;
-  width: fit-content;
-  color: #fff;
-  // color: var(--main-bg-color);
+
+  a {
+    // color: var(--main-text-color);
+    display: block;
+    font-family: var(--header-font);
+    // font-size: 15vw;
+    font-weight: 700;
+    padding: 10px;
+    text-decoration: none;
+    width: fit-content;
+    color: #fff;
+    // color: var(--main-bg-color);
+  }
 }
 
 .site_nav {

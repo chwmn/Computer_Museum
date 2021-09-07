@@ -13,18 +13,14 @@ pageTitle: THE COMPUTER MUSEUM
       </div>
       <div>
         <p>
-          <!-- The Computer Museum is a collection of computer related items founded
-          by Bob Roswell and Maury Weinstein and is hosted by System Source.
-          Started in the Bob and MAury's old store basement, the museum now
-          hosts a plethora of historical and impactful computation devices from
-          the inception of computing. -->
           The System Source Computer Museum is open
           <span>8:30 AM to 5:00 PM Monday - Friday.</span>
           We are also open for private tours by appointment. All tours are free!
-          Come visit us today.
+          Come visit us today at
+          <span>338 CLUBHOUSE RD. HUNT VALLEY, MD 21031.</span>
         </p>
         <div class="buttons">
-          <a href="contact/index.html">MAKE APPOINTMENT</a>
+          <a href="">MAKE APPOINTMENT</a>
           <a href="">TAKE VIRTUAL TOUR</a>
         </div>
       </div>
@@ -36,7 +32,19 @@ pageTitle: THE COMPUTER MUSEUM
       <img class="icon" src="/assets/svg/computer.svg" alt="" />
     </div>
     <div class="galleryImages">
-      <img
+      {% for computer in exhibit.computers %}
+
+      <a href="/gallery/{{ computer.name | slug }}/index.html">
+        <img
+          src="{{ computer.image }}"
+          class="image"
+          alt="{{ computer.name }}"
+        />
+      </a>
+
+      {% endfor %}
+
+      <!-- <img
         class="image"
         src="/assets/images/BurroughsAddingMachine.png"
         alt=""
@@ -74,7 +82,7 @@ pageTitle: THE COMPUTER MUSEUM
         src="/assets/images/AddressographModel965-RR.png"
         alt=""
       />
-      <img class="image" src="/assets/images/IBM83CardSorter.png" alt="" />
+      <img class="image" src="/assets/images/IBM83CardSorter.png" alt="" /> -->
     </div>
 
     <div class="aboutLanding">
@@ -89,10 +97,71 @@ pageTitle: THE COMPUTER MUSEUM
       </div>
     </div>
 
-    <div id="contact" class="contentHead">
-      <img class="icon" src="/assets/svg/phone.svg" alt="" />
-      <h2>CONTACT</h2>
-      <img class="icon" src="/assets/svg/phone.svg" alt="" />
+    <div id="contact" class="aboutLanding">
+      <div class="bar">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="contentHead">
+        <img class="icon" src="/assets/svg/phone.svg" alt="" />
+        <h2>CONTACT</h2>
+        <img class="icon" src="/assets/svg/phone.svg" alt="" />
+      </div>
+      <div>
+        <p>
+          Do you have any questions, suggestions or just want to say “Hi”? Drop
+          us a line!
+        </p>
+      </div>
+
+      <form class="contactCurator">
+        <div class="textInput">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="Name" placeholder="John Doe" />
+        </div>
+        <div class="textInput">
+          <label for="email">Your email</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="johndoe123@email.com"
+          />
+        </div>
+        <div class="textInput">
+          <label for="message">Your message</label>
+          <textarea
+            name="Message"
+            id="message"
+            cols="30"
+            rows="8"
+            placeholder="Hello!"
+          ></textarea>
+        </div>
+      </form>
+    </div>
+
+    <div id="about" class="aboutLanding">
+      <div class="bar">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="contentHead">
+        <img class="icon" src="/assets/svg/list.svg" alt="" />
+        <h2>ABOUT</h2>
+        <img class="icon" src="/assets/svg/list.svg" alt="" />
+      </div>
+      <div>
+        <p>
+          The Computer Museum is a collection of computer related items founded
+          by Bob Roswell and Maury Weinstein and is hosted by System Source.
+          Started in the Bob and MAury's old store basement, the museum now
+          hosts a plethora of historical and impactful computation devices from
+          the inception of computing.
+        </p>
+      </div>
     </div>
   </section>
 </div>

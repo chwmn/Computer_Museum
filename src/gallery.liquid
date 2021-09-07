@@ -1,0 +1,31 @@
+---
+pagination:
+  data: exhibit.computers
+  size: 1
+  alias: computer
+
+permalink: /gallery/{{ computer.name | slug }}/index.html
+layout: base.html
+---
+
+<div class="contentContainer">
+  <section class="content">
+    <div class="galleryPosts">
+      <img src="{{ computer.image }}" alt="" />
+    </div>
+    <div class="galleryPosts">
+      <h2>
+        {{ computer.name }}
+      </h2>
+      <div class="aboutLanding">
+        <div class="bar">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <p>Year: {{ computer.year }}</p>
+        <p>Company: {{ computer.company }}</p>
+      </div>
+    </div>
+  </section>
+</div>
