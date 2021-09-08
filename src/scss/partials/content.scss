@@ -413,3 +413,9 @@
     font-size: 70px;
   }
 }
+
+@media all and (max-width: 950px) {
+  .galleryPosts {
+    width: 100%;
+  }
+}
